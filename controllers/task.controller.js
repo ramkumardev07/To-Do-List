@@ -25,7 +25,7 @@ exports.add_task_with_img = async(req,res,next) =>{
             const fileName = req.file.originalname
             const data = JSON.parse(req.body.data);
             const dbx = new dropbox({
-                accessToken:""
+                accessToken:"your access token"
             })
 
             const dropbox_path =  `/To-Do-List files/${fileName}`
